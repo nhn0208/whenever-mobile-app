@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:paddingTop="40dp"
+  tools:context=".Fragment.CartFragment"
+  android:orientation="vertical">
+
+    <ListView
+      android:id="@+id/cartListView"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="9"
+      android:verticalSpacing="8dp"
+      android:horizontalSpacing="8dp"
+      android:scrollbars="none"
+      android:gravity="center"
+      app:layout_constraintBottom_toTopOf="@+id/totalCartContainer"
+      app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+      android:id="@+id/totalCartContainer"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@color/primary"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:paddingHorizontal="20dp">
+        <TextView
+          android:id="@+id/totalCartTV"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:text="Total: "
+          android:paddingRight="20dp"
+          android:gravity="center"
+          android:textColor="@color/white"/>
+        <TextView
+          android:id="@+id/btnCartCheckout"
+          android:layout_width="100dp"
+          android:layout_height="50dp"
+          android:gravity="center"
+          android:background="@drawable/border_background_no_opacity"
+          android:backgroundTint="@color/white"
+          android:textColor="@color/primary"
+          android:text="Mua hàng"/>
+    </LinearLayout>
+
+</LinearLayout>

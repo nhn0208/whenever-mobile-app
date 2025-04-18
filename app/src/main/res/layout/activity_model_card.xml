@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:layout_gravity="center">
+  <ImageView
+    android:id="@+id/modelCardImage"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/placeholder_image" />
+
+  <TextView
+    android:id="@+id/modelCardName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Model Name"
+    android:textSize="12sp"
+    android:textStyle="bold"
+    android:gravity="center" />
+</LinearLayout>
